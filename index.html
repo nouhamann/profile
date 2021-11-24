@@ -6,29 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="background-color:blue;color:white">
+    <style>
+        body {
+        padding: 15px;
+        background-color: white;
+        color: black;
+        font-size: 15px;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      .light-mode {
+        background-color: white;
+        color: black;
+      }
+    </style>
+    <div style="background-color:rgb(146, 182, 154);color:black;border-radius:10px;border:black;padding:10px;">
+<body>
     <h1>Nouha Mann</h1>
     <hr>
-    <p>Software Developer</p>
-    <p>Location: London</p>
-    <p>Email: nouhamann45@gmail.com</p>
-    <p>I am currently searching for an apprenticeship in Software Engineering and have recently joined a Tech Talent Accelerator Programme
+    <p> Software Developer</p>
+    <p> Location: London</p>
+    <p> Email: nouhamann45@gmail.com</p>
+    <p> I am currently searching for an apprenticeship in Software Engineering and have recently joined a Tech Talent Accelerator Programme
         by Generation UK.
     </p>
-    <p>Experience: Tech Talent Accelerator Programme</p>
-    <p>Go to my
+    <p> Experience: Tech Talent Accelerator Programme</p>
+    <p> Go to my
     <a href="https://github.com/nouhamann/profile.git" target="_blank"><button>GitHub</button></a>
     </p>
+    <h2><ins>Education</ins></h2>
     <ul>
         <li>11 GCSE's</li>
         <li>3 A-Levels</li>
-           <ol type="i">
+           <ul type="square">
                 <li>Physics
                 <li>Maths</li>
                 <li>Sociology</li>
 
-           </ol>
+           </ul>
     </ul>
-    
+    </div>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <script>
+      function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+      }
+      function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+      }
+    </script>
 </body>
 </html>
