@@ -7,41 +7,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <style>
-        body {
-        padding: 15px;
-        background-color: white;
-        color: black;
-        font-size: 15px;
-      }
-      .dark-mode {
-        background-color: black;
-        color: white;
-      }
-      .light-mode {
-        background-color: white;
-        color: black;
-      }
-    </style>
     <div class="container"></div>
-    <div style="background-color:rgb(179, 218, 187);color:black;border-radius:10px;border:black;padding:10px;">
 <body>
+<!-- Nav Bar -->
+  <nav>
+    <div class="logo">Software Engineer</div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Me</a></li>
+    <li><a href="#">Skills</a></li>
+    <li><a href="#">Contact Me</a></li>
+  </ul>
+  </nav>
+  <section></section>
+  <!-- Heading -->
     <h1 style="text-align:center;">Nouha Mann</h1>
-    <button type="button" class="button">HTML</button>
-    <button type="button" class="button">CSS</button>
-    <button type="button" class="button">Javascript</button>
     <hr>
-    <p>Location📍: London</p>
-    <p>Email📧: <a href="mailto:nouhamann@outlook.com" target="_blank"><button>nouhamann@outlook.com</button></a> </p>
+  <!-- About Me -->
+    <h2><ins>About Me</ins></h2>
     <p> I am currently searching for an apprenticeship in Software Engineering and have recently joined a Tech Talent Accelerator Programme
-        by Generation UK.
-      </p>
-    <p> Experience: Tech Talent Accelerator Programme</p>
-    <p> Go to my
-    <a href="https://github.com/nouhamann/profile.git" target="_blank"><button>GitHub</button></a>
+      by Generation UK.
     </p>
-    <hr>
-    <h2><ins>Education</ins></h2>
+  <p> Experience: Tech Talent Accelerator Programme</p>
+    <h3><ins>Education</ins></h3>
     <ul>
         <li>11 GCSE's</li>
         <li>3 A-Levels</li>
@@ -52,7 +40,21 @@
 
            </ul>
     </ul>
-    </div>
+  <hr>
+  <!-- Skills -->
+    <h2><ins>Skills</ins></h2>
+
+    <button type="button" class="button">HTML</button>
+    <button type="button" class="button">CSS</button>
+    <button type="button" class="button">Javascript</button>
+    <hr>
+  <!-- Contact Me -->
+  <h2><ins>Contact Me</ins></h2>
+    <p>Email📧: <a href="mailto:nouhamann@outlook.com" target="_blank"><button>nouhamann@outlook.com</button></a> </p>
+    <p> Go to my
+    <a href="https://github.com/nouhamann/profile.git" target="_blank"><button>GitHub</button></a>
+    </p>
+    <hr>
     <button onclick="darkMode()">Darkmode</button>
     <button onclick="lightMode()">LightMode</button>
     <script>
